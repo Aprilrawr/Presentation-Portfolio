@@ -429,15 +429,25 @@ html {
 }
 
 /* Applying animations */
+/* Adjusted Slide-in Timing */
 h1, h2, h3 {
     opacity: 0;
     animation: slideInLeft 1s ease-out forwards;
+    animation-delay: 0.3s;
 }
+
 .subtitle {
     opacity: 0;
     animation: slideInBottom 1s ease-out forwards;
+    animation-delay: 0.5s;
 }
+
 img {
     opacity: 0;
     animation: slideInRight 1.5s ease-in-out forwards;
+    animation-delay: 0.7s;
+}
+
+h1, h2, h3, .subtitle, img {
+    will-change: opacity, transform;
 }
