@@ -12,6 +12,8 @@ body.loaded img {
     animation: slideInRight 1.5s ease-in-out forwards;
 }
 
+
+
 body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
 	margin:0;
 	padding:0;
@@ -408,7 +410,7 @@ div._idGenObjectLayout-1 {
     50% { background-color: #b0b0b0; }
     100% { background-color: #e0e0e0; }
 }
-body {
+html {
     animation: backgroundFade 10s infinite alternate ease-in-out;
 }
 
