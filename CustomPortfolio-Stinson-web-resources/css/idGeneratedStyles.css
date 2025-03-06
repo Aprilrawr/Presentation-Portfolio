@@ -387,3 +387,41 @@ div._idGenObjectLayout-1 {
 	width:100%;
 	height:100%;
 }
+
+/* Background color animation */
+@keyframes backgroundFade {
+    0% { background-color: #e0e0e0; }
+    50% { background-color: #b0b0b0; }
+    100% { background-color: #e0e0e0; }
+}
+body {
+    animation: backgroundFade 10s infinite alternate ease-in-out;
+}
+
+/* Slide-in animations */
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideInBottom {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Applying animations */
+h1, h2, h3 {
+    opacity: 0;
+    animation: slideInLeft 1s ease-out forwards;
+}
+.subtitle {
+    opacity: 0;
+    animation: slideInBottom 1s ease-out forwards;
+}
+img {
+    opacity: 0;
+    animation: slideInRight 1.5s ease-in-out forwards;
+}
